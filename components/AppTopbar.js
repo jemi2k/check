@@ -20,11 +20,11 @@ const AppTopbar = forwardRef((props, ref) => {
 
     return (
         <div className="layout-topbar">
-            <Link href="/">
+            <Link legacyBehavior href="/">
                 <a className="layout-topbar-logo">
                     <>
-                        <img src={`${contextPath}/layout/images/logo-${layoutConfig.colorScheme !== 'light' ? 'white' : 'dark'}.svg`} width="47.22px" height={'35px'} widt={'true'} alt="logo" />
-                        <span>SAKAI</span>
+                        <img src={`${contextPath}/layout/images/logo.png`} width={''} height={'55px'} widt={'true'} alt="logo" />
+                        <span>Alkebuna</span>
                     </>
                 </a>
             </Link>
@@ -46,7 +46,7 @@ const AppTopbar = forwardRef((props, ref) => {
                     <i className="pi pi-user"></i>
                     <span>Profile</span>
                 </button>
-                <Link href="/documentation">
+                <Link legacyBehavior href="/">
                     <button type="button" className="p-link layout-topbar-button">
                         <i className="pi pi-cog"></i>
                         <span>Settings</span>
